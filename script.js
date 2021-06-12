@@ -1,7 +1,5 @@
 const bignumber = function (number) {
     if (number > 100)
-        return true;
-    return false;
 };
 
 console.log(bignumber(500));
@@ -11,7 +9,8 @@ const bouncer = function (maxguest, guest, age) {
    if(age < 18) {
        return "this is a club for adults";
    } 
-    if(guest < maxguest ) {
+    
+   if(guest < maxguest ) {
        return "come in";
    } 
    return "it's too busy now, come back later";
