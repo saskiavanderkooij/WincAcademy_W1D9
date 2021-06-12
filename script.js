@@ -5,16 +5,16 @@ const bignumber = function (number) {
 };
 
 console.log(bignumber(500));
-// function that does something
+// function that produce something
 
 const bouncer = function (maxguest, guest, age) {
-    if (guest < maxguest && age >= 18) {
-        return "come in";
-    } else if (guest >= maxguest && age >= 18) {
-        return "it's too busy now, come back later";
-    } else {
-        return "this is a club for adults";
-    }
+   if(age < 18) {
+       return "this is a club for adults";
+   } 
+    if(guest < maxguest ) {
+       return "come in";
+   } 
+   return "it's too busy now, come back later";
 };
 
 console.log(bouncer(50, 50, 17));
